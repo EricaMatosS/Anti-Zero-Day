@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Desafios | Help English</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-container">
+        <header class="profile-header">
+            <div class="avatar-wrapper">
+                <img src="mascote.png" alt="Mascote" class="mascote floating" id="avatar">
+                <div class="status-badge"></div>
+            </div>
+            <h1>Daily Missions</h1>
+            <p class="date-text" id="current-date">01 de Fevereiro, 2026</p>
+        </header>
+
+        <main class="missions-grid">
+            <div class="mission-card">
+                <div class="icon">🚀</div>
+                <div class="info">
+                    <h3>Fast Reading</h3>
+                    <p>Leia 5 minutos de uma notícia em inglês.</p>
+                </div>
+            </div>
+            <div class="mission-card">
+                <div class="icon">🎧</div>
+                <div class="info">
+                    <h3>Deep Listening</h3>
+                    <p>Escute um áudio e anote 3 palavras novas.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="action-area">
+            <button class="btn-premium" id="btn-acao" onclick="completarTarefa()">
+                <span>Finalizar Expediente</span>
+                <div class="btn-shine"></div>
+            </button>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
