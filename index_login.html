@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Help English</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-container">
+        <header class="profile-header">
+            <div class="avatar-wrapper">
+                <img src="mascote.png" alt="Mascote" class="mascote floating" id="avatar-login">
+            </div>
+            <h1 id="auth-title">Welcome friend!</h1>
+            <p id="auth-subtitle" class="date-text">Faça login para iniciar seus estudos.</p>
+        </header>
+
+        <form id="login-form" class="auth-form">
+            <div class="input-group">
+                <input type="email" placeholder="E-mail" class="input-field" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Senha" class="input-field" required>
+            </div>
+            
+            <button type="button" class="btn-premium" onclick="simularLogin()">
+                <span>Entrar</span>
+                <div class="btn-shine"></div>
+            </button>
+        </form>
+
+        <div class="toggle-container">
+            <p id="toggle-msg" style="color: var(--text-muted); font-size: 14px; margin-top: 20px;">
+                Ainda não tem uma conta? 
+                <span class="toggle-link" onclick="alternarTela()" style="color: #6366f1; cursor: pointer; font-weight: 600;">Criar agora</span>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
