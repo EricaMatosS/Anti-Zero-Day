@@ -8,6 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </div>
+        </label>
+    </div>
+
     <div class="glass-container">
         <header class="profile-header">
             <div class="avatar-wrapper">
@@ -37,7 +47,7 @@
 
         <footer class="action-area">
             <button class="btn-premium" id="btn-acao" onclick="completarTarefa()">
-                <span>Finalizar Expediente</span>
+                <span>Concluir tarefa</span>
                 <div class="btn-shine"></div>
             </button>
         </footer>
